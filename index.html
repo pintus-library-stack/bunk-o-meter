@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bunk-O-Meter</title>
+</head>
+
+<body>
+
+    <!-- BUNK-O-METER HEADING WITH TWO STICKERS -->
+
+    <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+
+        <img src="charan.jpeg" alt="Namaskar" width="80">
+
+        <h1>*BUNK-O-METER*</h1>
+
+        <img src="charan.jpeg" alt="Namaskar" width="80">
+
+    </div>
+
+    <!-- <h3 align="center">😈 Calculate first. Disappear later 😈</h3> -->
+
+    <hr>
+
+    <!-- ATTENDANCE CALCULATOR -->
+
+    <div class="calculator">
+
+        <h1 align="center">*Attendance Calculator*</h1>
+
+        <h2>How Much lectures required to attend Until You Hit Your Target??</h2>
+
+        <h3>STEP 1: What's your college's minimum attendance requirement? (sabka 75% nhi hota yawr💔)</h3>
+
+        <label for="targetAttendance">
+            Minimum attendance percentage:
+        </label>
+
+        <input type="number" id="targetAttendance"
+            min="1" max="100" step="1"
+            placeholder="e.g. 75">
+
+        <button onclick="showAttendanceInputs()">
+            Continueeee
+        </button>
+
+        <div id="attendanceInputs" style="display:none;">
+
+            <h3>STEP 2: Enter your lecture details</h3>
+
+            <label for="total">
+                Total lectures conducted for a particular subject:
+            </label>
+
+            <input type="number" id="total" min="1"
+                placeholder="Enter total lectures">
+
+            <br><br>
+
+            <label for="attended">
+                Total lectures attended for a particular subject:
+            </label>
+
+            <input type="number" id="attended" min="0"
+                placeholder="Enter attended lectures">
+
+            <br><br>
+
+            <button onclick="calculateAttendance()">
+                How Much Survival?? 💀
+            </button>
+
+            <div id="attendanceResult" class="result-container"></div>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <hr>
+    <hr>
+
+    <!-- BUNK CALCULATOR -->
+
+    <div class="calculator">
+
+        <h1 align="center">*Bunk Calculator*</h1>
+
+        <h2>How Much Freedom Can You Afford??</h2>
+
+        <h3>STEP 1: What's your college's minimum attendance requirement?</h3>
+
+        <label for="targetBunk">
+            Minimum attendance percentage:
+        </label>
+
+        <input type="number" id="targetBunk"
+            min="1" max="100" step="1"
+            placeholder="e.g. 75">
+
+        <button onclick="showBunkInputs()">
+            Continueee
+        </button>
+
+        <div id="bunkInputs" style="display:none;">
+
+            <h3>STEP 2: Enter your lecture details</h3>
+
+            <label for="totalBunk">
+                Total lectures conducted for a particular subject:
+            </label>
+
+            <input type="number" id="totalBunk" min="1"
+                placeholder="Enter total lectures">
+
+            <br><br>
+
+            <label for="attendedBunk">
+                Total lectures attended for a particular subject:
+            </label>
+
+            <input type="number" id="attendedBunk" min="0"
+                placeholder="Enter attended lectures">
+
+            <br><br>
+
+            <button onclick="calculateBunks()">
+                How Many Can I Bunk? 😈
+            </button>
+
+            <div id="bunkResult" class="result-container"></div>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <hr>
+
+    <footer>
+        <h4 align="right">
+            ~ A lil saviour crafted by Pintu Choudhary 😭!!!!
+        </h4>
+    </footer>
+
+    <!-- CONNECT JAVASCRIPT FILE -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
